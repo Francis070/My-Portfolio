@@ -11,7 +11,7 @@ export const Banner = () => {
   const [text, setText] = useState('');
   const [delta, setDelta] = useState(300 - Math.random() * 100);
   const [index, setIndex] = useState(1);
-  const toRotate = [ "Web Developer", "Web Designer", "UI/UX Designer" ];
+  const toRotate = [ "Web Developer", "Competitive Programmer", "Data Analyst" ];
   const period = 2000;
 
   useEffect(() => {
@@ -56,8 +56,8 @@ export const Banner = () => {
               {({ isVisible }) =>
               <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
                 <span className="tagline">Welcome to my Portfolio</span>
-                <h1>{`Hi! I'm Judy`} <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Web Developer", "Web Designer", "UI/UX Designer" ]'><span className="wrap">{text}</span></span></h1>
-                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                <h1>{`Hi! I'm Abhijit, a `} <span className="txt-rotate" dataPeriod="300" data-rotate='[ "Web Developer", "Competitive Programmer", "Data Analyst" ]'><span className="wrap">{text}</span></span></h1>
+                  <p>Greetings! I am a Full Stack Developer hailing from Odisha, with a deep-rooted passion for Competitive Programming. When I'm not busy crafting cutting-edge features, refining user interfaces, or optimizing backend functionalities for my projects, I immerse myself in the fascinating world of Data Structures and Algorithms, tackling intricate problem sets with enthusiasm. Apart from coding, I find joy in playing football, embracing the team spirit and the thrill of the game. With a perfect blend of tech expertise and sporting spirit, I am always eager to take on new challenges and make a positive impact in both the virtual and real-world arenas.</p>
                   <button onClick={() => console.log('connect')}>Let’s Connect <ArrowRightCircle size={25} /></button>
               </div>}
             </TrackVisibility>
