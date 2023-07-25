@@ -10,17 +10,17 @@ export const Footer = () => {
     <footer className="footer">
       <Container>
         <Row className="align-items-center">
-          <MailchimpForm />
-          <Col size={12} sm={6}>
+          {/* <MailchimpForm /> */}
+          {/* <Col size={12} sm={6}>
             <img src={logo} alt="Logo" />
-          </Col>
-          <Col size={12} sm={6} className="text-center text-sm-end">
-            <div className="social-icon">
+          </Col> */}
+          <Col size={12} sm={12} className="text-center">
+            <div className="social-icon-footer" >
               <a href="#"><img src={navIcon1} alt="Icon" /></a>
               <a href="#"><img src={navIcon2} alt="Icon" /></a>
               <a href="#"><img src={navIcon3} alt="Icon" /></a>
             </div>
-            <p>Copyright 2022. All Rights Reserved</p>
+            <p>© 2023 Abhijit Mukherjee. All Rights Reserved</p>
           </Col>
         </Row>
       </Container>
